@@ -39,6 +39,10 @@ Enter a user name on the search bar, and it will show you the results.
 ![Screenshot from 2022-09-30 13-13-50](https://user-images.githubusercontent.com/26368576/193313779-afe58ee2-ea07-4a9d-aa9a-a7a08b1b31c5.png)
 
 
+# Link to Live Website
+Link: [Github search app](https://david-enamorado-web-angular-version.vercel.app/)
+
+
 # Known Bugs
 There are no known bugs of this project at the moment.
 
