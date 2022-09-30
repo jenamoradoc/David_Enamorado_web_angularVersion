@@ -1,0 +1,7 @@
+<a class="user" [href]="user?.html_url" target="_blank">
+  <div class="user-info">
+    <img [src]="user?.avatar_url" alt="user_avatar" />
+  </div>
+  <h3 class="user-name truncate">{{ user?.login }}</h3>
+  <p class="user-type">{{ user?.type }}</p>
+</a>

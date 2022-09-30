@@ -1,0 +1,15 @@
+<div class="paginator">
+  <div class="per-page">
+    <label for="per-page">Items per page: </label>
+    <select name="per-page" id="per-page" [formControl]="changeSizePageControl" #perPage>
+      <option *ngFor="let pageSize of pageSizeOptions" [value]="pageSize">{{pageSize}}</option>
+    </select>
+  </div>
+  <div class="info-page">
+    <p>Showing {{ from }}-{{ to }} of {{ totalCount }} results</p>
+  </div>
+  <div class="paginator-actions">
+    <button class="btn btn-paginator" (click)="onPrev()" [disabled]="to === totalCount"> < </button>
+    <button class="btn btn-paginator" (click)="onNext()" [disabled]="to === totalCount "> > </button>
+  </div>
+</div>
