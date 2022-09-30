@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PaginatorComponent should match snapshot 1`] = `
+<div
+  id="root1"
+>
+  <div
+    class="paginator"
+  >
+    <div
+      class="per-page"
+    >
+      <label
+        for="per-page"
+      >
+        Items per page: 
+      </label>
+      <select
+        class="ng-untouched ng-pristine ng-valid"
+        id="per-page"
+        name="per-page"
+      >
+        <option
+          value="10"
+        >
+          10
+        </option>
+        <option
+          value="20"
+        >
+          20
+        </option>
+        <option
+          value="50"
+        >
+          50
+        </option>
+        <option
+          value="100"
+        >
+          100
+        </option>
+        
+      </select>
+    </div>
+    <div
+      class="info-page"
+    >
+      <p>
+        Showing 1-0 of 0 results
+      </p>
+    </div>
+    <div
+      class="paginator-actions"
+    >
+      <button
+        class="btn btn-paginator"
+        disabled=""
+      >
+         &lt; 
+      </button>
+      <button
+        class="btn btn-paginator"
+        disabled=""
+      >
+         &gt; 
+      </button>
+    </div>
+  </div>
+</div>
+`;

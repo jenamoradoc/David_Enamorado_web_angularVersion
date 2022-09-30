@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="search-form">
+    <!-- Search form -->
+    <form [formGroup]="searchForm" (ngSubmit)="onSubmit()" class="form-group">
+      <div class="form-control">
+        <label for="search">Search Github Users</label>
+        <input
+          type="text"
+          class="form-input"
+          id="search"
+          placeholder="Type an username..."
+          formControlName="search"
+        />
+        <div class="actions">
+            <button type="submit" class="btn btn-primary" style="margin-right: 0.25rem;" [disabled]="searchForm.invalid">Submit</button>
+            <button type="reset" class="btn btn-secondary" (click)="onClear(); $event.preventDefault()">Clear</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="users-container">
+    <ng-container *ngIf="showSplash; else showUsers">
+      <div class="splash">
+        <h2>Search Github Users</h2>
+        <p>Enter a username to search for a Github user</p>
+        <img src="assets/undraw_team_re_0bfe.svg" alt="github_users_splash">
+      </div>
+    </ng-container>
+    <ng-template #showUsers>
+      <div class="sort-select" [formGroup]="searchForm">
+        <select name="sort" id="sort" formControlName="sort">
+          <option value="best match">Best Match</option>
+          <option value="followers">Followers</option>
+          <option value="repositories">Repositories</option>
+          <option value="joined">Joined</option>
+        </select>
+      </div>
+      <app-users [users]="users"></app-users>
+      <app-paginator [page]="currentPage" [totalCount]="total_count" (onChangePage)="onChangePage($event)" (onChangePageSize)="onChangePageSize($event)"></app-paginator>
+    </ng-template>
+  </div>
+</div>

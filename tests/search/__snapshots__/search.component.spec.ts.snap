@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchComponent should match snapshot 1`] = `
+<div
+  id="root1"
+>
+  <div
+    class="container"
+  >
+    <div
+      class="search-form"
+    >
+      <form
+        class="form-group ng-untouched ng-pristine ng-invalid"
+        novalidate=""
+      >
+        <div
+          class="form-control"
+        >
+          <label
+            for="search"
+          >
+            Search Github Users
+          </label>
+          <input
+            class="form-input ng-untouched ng-pristine ng-invalid"
+            formcontrolname="search"
+            id="search"
+            placeholder="Type an username..."
+            type="text"
+          />
+          <div
+            class="actions"
+          >
+            <button
+              class="btn btn-primary"
+              disabled=""
+              style="margin-right: 0.25rem;"
+              type="submit"
+            >
+              Submit
+            </button>
+            <button
+              class="btn btn-secondary"
+              type="reset"
+            >
+              Clear
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div
+      class="users-container"
+    >
+      <div
+        class="splash"
+      >
+        <h2>
+          Search Github Users
+        </h2>
+        <p>
+          Enter a username to search for a Github user
+        </p>
+        <img
+          alt="github_users_splash"
+          src="assets/undraw_team_re_0bfe.svg"
+        />
+      </div>
+      
+      
+      
+    </div>
+  </div>
+</div>
+`;

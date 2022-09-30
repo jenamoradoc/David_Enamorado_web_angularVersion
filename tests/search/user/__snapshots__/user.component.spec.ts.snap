@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserComponent should match snapshot 1`] = `
+<div
+  id="root1"
+>
+  <a
+    class="user"
+    href=""
+    target="_blank"
+  >
+    <div
+      class="user-info"
+    >
+      <img
+        alt="user_avatar"
+        src=""
+      />
+    </div>
+    <h3
+      class="user-name truncate"
+    >
+      
+    </h3>
+    <p
+      class="user-type"
+    >
+      
+    </p>
+  </a>
+</div>
+`;
+
+exports[`UserComponent should render user 1`] = `
+<div
+  id="root2"
+>
+  <a
+    class="user"
+    href="https://github.com/ces"
+    target="_blank"
+  >
+    <div
+      class="user-info"
+    >
+      <img
+        alt="user_avatar"
+        src="https://avatars.githubusercontent.com/u/112995?v=4"
+      />
+    </div>
+    <h3
+      class="user-name truncate"
+    >
+      ces
+    </h3>
+    <p
+      class="user-type"
+    >
+      User
+    </p>
+  </a>
+</div>
+`;
